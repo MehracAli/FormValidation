@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    .row{
+        justify-content: center;
+        .form-page{
+            width: 450px;
+            height: 550px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 8px rgba(90, 90, 90, 0.5);
+            padding: 5px 15px;
+            .title{
+                line-height: 10px;
+                h1{
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+                span{
+                    color: rgb(90, 90, 90);
+                }
+                hr{
+                    margin: 20px 0px!important;
+                }
+            }
+            .form-inputs{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                input{
+                    margin-bottom: 15px;
+                    padding: 8px;
+                    border: solid 1px rgb(190, 190, 190);
+                    border-radius: 4px;
+                    background-color: rgb(245, 245, 245);
+                    outline: none;
+                    
+                }
+                .fullname{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            button{
+                width: 30%;
+                padding: 8px;
+                margin: 0 auto;
+                border-radius: 4px;
+                background-color: rgb(5, 179, 5);
+                color: white;
+                font-size: 18px;
+                border: none;
+                margin-top: 60px;
+            }
+            button:hover{
+                cursor: pointer;
+                background: rgb(2,0,36);
+background: linear-gradient(360deg, rgb(85, 109, 85) 0%, rgb(80, 132, 80) 35%, rgb(116, 177, 116) 100%);
+            }
+        }
+    }
+}
+
+// js clases
+
+.if-valid{
+    outline: solid 1px green;
+}
+.if-invalid{
+    outline: solid 1px red;
+}
